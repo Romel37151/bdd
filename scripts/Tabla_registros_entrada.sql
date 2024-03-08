@@ -2,6 +2,7 @@
 
 drop table registros_entrada
 
+
 create table registros_entrada(
 	codigo_registro int not null,
 	cedula_empleado char (10) not null,
