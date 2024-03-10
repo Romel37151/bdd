@@ -10,7 +10,7 @@ create table cuentas(
 	constraint cuentas_pk primary key(numero_cuenta)
 )
 insert into cuentas(numero_cuenta,cedula_propietario,fecha_creacion,saldo)
-values ('12345','45612','1/1/2024',89)
+values ('12345','45612','1/1/2002',89)
 
 insert into cuentas(numero_cuenta,cedula_propietario,fecha_creacion,saldo)
 values ('32589','78945','1/12/2012',568)
@@ -22,10 +22,10 @@ insert into cuentas(numero_cuenta,cedula_propietario,fecha_creacion,saldo)
 values ('9632','78965','11/3/2022',893)
 
 insert into cuentas(numero_cuenta,cedula_propietario,fecha_creacion,saldo)
-values ('54123','89562','8/1/2024',39)
+values ('54123','89562','8/1/2019',39)
 
 insert into cuentas(numero_cuenta,cedula_propietario,fecha_creacion,saldo)
-values ('54321','85214','25/1/2023',21)
+values ('54321','85214','25/10/2023',21)
 
 insert into cuentas(numero_cuenta,cedula_propietario,fecha_creacion,saldo)
 values ('75314','85245','15/3/2022',963)
@@ -38,24 +38,7 @@ values ('82645','89654','1/9/2017',562)
 
 insert into cuentas(numero_cuenta,cedula_propietario,fecha_creacion,saldo)
 values ('80134','02586','1/7/2018',4258)
-
-select numero_cuenta,saldo from cuentas
-
 select * from cuentas
-where fecha_creacion
-between '1/1/2024' and '1/3/2024'
 
-select numero_cuenta,saldo from cuentas
-where fecha_creacion
-between '1/1/2024' and '1/3/2024'
-
-update cuentas set saldo='25'
-where numero_cuenta='12345'
-
-
-
-
-
-
-
-
+update cuentas set saldo=10
+where cedula_propietario like '17%'
