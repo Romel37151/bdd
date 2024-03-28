@@ -56,3 +56,9 @@ where per.estado_civil_codigo =ec.codigo
 and estado_civil_codigo='U'
 
 
+
+select pre.cedula, sum(monto) as monto_total_prestamo from prestamo pre 
+group by(cedula)
+
+select per.numeros_hijos from personas per
+where numeros_hijos >2

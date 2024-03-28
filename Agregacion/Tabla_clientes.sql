@@ -61,5 +61,11 @@ where cli.cedula = com.cedula
 select * from clientes cli, compras com
 where cli.cedula = '110523288'
 
-select count (edad) from clientes
-where edad<25
+select * from clientes
+select * from compras
+
+select  cedula, Sum(monto) from compras
+group by(cedula)
+
+select count(compra_cliente), fecha_compra from compras
+group by(fecha_compra)
